@@ -1,0 +1,7 @@
+[
+	{ "name": "foo",
+	  "repo": "https://foo.com" },
+
+	{ "name": "bar",
+	  "repo": "https://bar.com" }
+]

@@ -1,0 +1,26 @@
+% require "json"
+% index = JSON.parse(File.read("index.json"))
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>microrb</title>
+    </head>
+    <body>
+        <header>
+            <h1>microrb</h1>
+        </header>
+
+        <section>
+            <ul>
+            % index.each do |lib|
+                <li><a href="{{ lib["repo"] }}">{{ lib["name"] }}</a></li>
+            % end
+            </ul>
+        </section>
+
+        <footer>
+        </footer>
+    </body>
+</html>
