@@ -6,21 +6,30 @@
     <head>
         <meta charset="UTF-8" />
         <title>microrb</title>
+        <script type="text/javascript" src="./list.min.js"></script>
     </head>
     <body>
         <header>
             <h1>microrb</h1>
         </header>
 
-        <section>
-            <ul>
+        <section id="projects">
+            <input class="search" placeholder="Search..."/>
+            <ul class="list">
             % projects.each do |project|
-                <li><a href="{{ project.repo }}">{{ project.name }}</a></li>
+                <li>
+                  <a class="name" href="{{ project.repo }}">{{ project.name }}</a>
+                </li>
             % end
             </ul>
         </section>
 
         <footer>
         </footer>
+
+        <script type="text/javascript">
+          var options = { valueNames: ["name"] };
+          var projectList = new List("projects", { valueNames: ["name"] });
+        </script>
     </body>
 </html>
