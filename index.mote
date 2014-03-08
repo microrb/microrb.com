@@ -1,4 +1,6 @@
-% require "./project"
+% require "./micro"
+
+% tags = Tag.all
 % projects = Project.all
 
 <!DOCTYPE html>
@@ -6,7 +8,9 @@
     <head>
         <meta charset="UTF-8" />
         <title>microrb</title>
-        <script type="text/javascript" src="./list.min.js"></script>
+        <style type="text/css">
+          .filter li { display: inline; }
+        </style>
     </head>
     <body>
         <header>
@@ -14,22 +18,53 @@
         </header>
 
         <section id="projects">
+          <div>
             <input class="search" placeholder="Search..."/>
-            <ul class="list">
-            % projects.each do |project|
+          </div>
+          <div>
+            <ul class="filter">
+              <li>Filter by tag:</li>
+              % tags.each do |tag|
                 <li>
-                  <a class="name" href="{{ project.repo }}">{{ project.name }}</a>
+                  <a class="tag-filter" href="#{{ tag }}">{{ tag }}</a>
                 </li>
-            % end
+              % end
             </ul>
+            <a class="clear-filter" href="#">Clear filter</a>
+          </div>
+          <ul class="list">
+          % projects.each do |project|
+              <li>
+                <a class="name" href="{{ project.repo }}">{{ project.name }}</a>
+                % if project.tags.any?
+                <p>
+                  Tags: <span class="tags">{{ project.tags.join(", ") }}</span>
+                </p>
+                % end
+              </li>
+          % end
+          </ul>
         </section>
 
         <footer>
         </footer>
 
+        <script type="text/javascript" src="./ki.js"></script>
+        <script type="text/javascript" src="./list.min.js"></script>
         <script type="text/javascript">
-          var options = { valueNames: ["name"] };
-          var projectList = new List("projects", { valueNames: ["name"] });
+          var options = { valueNames: ["name", "tags"] };
+          var projectList = new List("projects", options);
+
+          $(".tag-filter").on("click", function() {
+            var tag = this.textContent;
+
+            projectList.filter(function(item) {
+              var tags = item.values().tags.split(", ");
+              return tags.find(function(t) { console.debug(tag); return t == tag });
+            });
+          });
+
+          $(".clear-filter").on("click", function() { projectList.filter(); return false; });
         </script>
     </body>
 </html>

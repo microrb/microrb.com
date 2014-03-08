@@ -1,6 +1,12 @@
 require "virtus"
 require "json"
 
+class Tag
+  def self.all
+    @all ||= Project.all.flat_map(&:tags).uniq.sort
+  end
+end
+
 class Project
   include Virtus.model
 
