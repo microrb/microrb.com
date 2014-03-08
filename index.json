@@ -1,7 +1,46 @@
 [
-	{ "name": "foo",
-	  "repo": "https://foo.com" },
+  { "name": "mote",
+    "repo": "https://github.com/soveran/mote" },
 
-	{ "name": "bar",
-	  "repo": "https://bar.com" }
+  { "name": "cuba",
+    "repo": "https://github.com/soveran/cuba",
+    "tags": ["web"] },
+
+  { "name": "ohm",
+    "repo": "https://github.com/soveran/ohm" },
+
+  { "name": "micromachine",
+    "repo": "https://github.com/soveran/micromachine" },
+
+  { "name": "nest",
+    "repo": "https://github.com/soveran/nest" },
+
+  { "name": "sinatra",
+    "repo": "https://github.com/sinatra/sinatra",
+    "tags": ["web"] },
+
+  { "name": "equalizer",
+    "repo": "https://github.com/dkubb/equalizer" },
+
+  { "name": "abstract_type",
+    "repo": "https://github.com/dkubb/abstract_type" },
+
+  { "name": "anima",
+    "repo": "https://github.com/mbj/anima" },
+
+  { "name": "unparser",
+    "repo": "https://github.com/mbj/unparser" },
+
+  { "name": "morpher",
+    "repo": "https://github.com/mbj/morpher" },
+
+  { "name": "charlatan",
+    "repo": "https://github.com/solnic/charlatan" },
+
+  { "name": "virtus",
+    "repo": "https://github.com/solnic/virtus" },
+
+  { "name": "coercible",
+    "repo": "https://github.com/solnic/virtus" }
+
 ]

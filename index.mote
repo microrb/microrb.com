@@ -1,5 +1,5 @@
-% require "json"
-% index = JSON.parse(File.read("index.json"))
+% require "./project"
+% projects = Project.all
 
 <!DOCTYPE html>
 <html lang="en">
@@ -14,8 +14,8 @@
 
         <section>
             <ul>
-            % index.each do |lib|
-                <li><a href="{{ lib["repo"] }}">{{ lib["name"] }}</a></li>
+            % projects.each do |project|
+                <li><a href="{{ project.repo }}">{{ project.name }}</a></li>
             % end
             </ul>
         </section>
