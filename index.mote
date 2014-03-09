@@ -28,7 +28,7 @@
             </h1>
           </header>
           <section id="projects">
-            <form class="form-inline" method="get">
+            <form id="search" class="form-inline" method="get">
               <fieldset>
                 <input class="search input-lg" placeholder="search..."/>
               </fieldset>

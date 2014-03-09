@@ -2,6 +2,10 @@ var options = { valueNames: ["name", "description", "tag"] };
 var projectList = new List("projects", options);
 var filter;
 
+document.getElementById('search').addEventListener('submit', function(event){ 
+    event.preventDefault();
+});
+
 $(".tag-filter").on("click", function() {
   var tag = this.textContent;
   var parent = this.parentNode;
