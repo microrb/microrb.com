@@ -1,16 +1,29 @@
 var options = { valueNames: ["name", "description", "tag"] };
 var projectList = new List("projects", options);
+var filter;
 
 $(".tag-filter").on("click", function() {
   var tag = this.textContent;
+  var parent = this.parentNode;
 
-  projectList.filter(function(item) {
-    var tags = item.values().tag.split(", ");
-    return tags.find(function(t) { console.debug(tag); return t == tag });
-  });
-});
+  if (filter) {
+    filter.className = "label label-default";
+    projectList.filter();
+  }
 
-$(".clear-filter").on("click", function() {
-  projectList.filter();
-  return false;
+  if (filter != parent) {
+    this.parentNode.className = "label label-primary";
+
+    projectList.filter(function(item) {
+      var tags = item.values().tag.split(", ");
+
+      return tags.find(function(t) {
+        return t == tag;
+      });
+    });
+
+    filter = parent;
+  } else {
+    filter = null;
+  }
 });

@@ -11,7 +11,7 @@
       <link href="./bootstrap.min.css" rel="stylesheet">
       <style type="text/css">
         .search { width: 100%; margin: 0 auto; display: block; }
-        .filter { margin-bottom: 10px; }
+        .filter a { outline: none; text-decoration: none; }
         .filter .label { display: inline-block; margin: 8px 0 0 5px; }
         #projects { width: 50%; margin: 0 auto; }
         footer { text-align: center; padding: 20px 0; border-top: 1px solid gray; }
@@ -29,16 +29,19 @@
               </fieldset>
             </form>
             <br/>
-            <div class="well">
-              <div class="filter">
-                Filter by tag:
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <div class="panel-title">
+                  Filter by tag
+                </div>
+              </div>
+              <div class="panel-body filter">
                 % tags.each do |tag|
                   <span class="label label-default">
                     <a class="tag-filter" href="#{{ tag }}">{{ tag }}</a>
                   </span>
                 % end
               </div>
-              <a class="clear-filter" href="#">Clear filter</a>
             </div>
             <br/>
             <ul class="list list-unstyled">
