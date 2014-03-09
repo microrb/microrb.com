@@ -1,6 +1,6 @@
 all: public/index.html
 
-public/index.html: index.mote index.json
+public/index.html: index.mote data.json
 	mote $< > $@
 
 clean:
