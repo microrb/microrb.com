@@ -1,5 +1,5 @@
 [
-  { "name": "soveran/mote",         "tags": ["template"] }
+  { "name": "soveran/mote",         "tags": ["template"] },
   { "name": "soveran/cuba",         "tags": ["web"] },
   { "name": "soveran/ohm",          "tags": ["key-value", "database"] },
   { "name": "soveran/micromachine", "tags": ["state-machine"] },

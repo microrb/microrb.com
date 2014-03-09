@@ -1,5 +1,6 @@
 require "virtus"
 require "json"
+require "open-uri"
 
 class Tag
   def self.all
@@ -7,12 +8,50 @@ class Tag
   end
 end
 
+class GithubProject
+  URL = "https://api.github.com/repos/%s".freeze
+
+  MAPPING = {
+    "html_url" => "website",
+    "url" => "github_url",
+    "stargazers_count" => "stars",
+    "description" => "description",
+    "forks" => "forks"
+  }.freeze
+
+  attr_reader :data
+
+  def initialize(id)
+    @id = id
+    @url = URL % id
+    @data = JSON.parse(open(@url).read)
+  end
+
+  def attributes
+    @attributes ||= MAPPING.each_with_object({}) { |(k,v), h| h[v] = data[k] }
+  end
+end
+
 class Project
   include Virtus.model
 
   attribute :name, String
-  attribute :repo, String
+  attribute :description, String
+  attribute :github_url, String
+  attribute :website, String
+  attribute :stars, Integer
   attribute :tags, Array[String]
+
+  def self.update_data
+    base = JSON.load(File.read("./projects.json"))
+
+    full = base.map do |json|
+      puts "updating #{json["name"]}..."
+      GithubProject.new(json["name"]).attributes.update(json)
+    end
+
+    File.open("data.json", "w") { |f| f << full.to_json }
+  end
 
   def self.get(name)
     all.detect { |project| project.name == name }
@@ -27,6 +66,10 @@ class Project
   end
 
   def self.data
-    @data ||= JSON.load(File.read("./index.json"))
+    @data ||= JSON.load(File.read("./data.json"))
+  end
+
+  def short_name
+    name.split("/").last
   end
 end

@@ -11,6 +11,8 @@
       <link href="./bootstrap.min.css" rel="stylesheet">
       <style type="text/css">
         .search { width: 100%; margin: 0 auto; display: block; }
+        .filter { margin-bottom: 10px; }
+        .filter .label { display: inline-block; margin: 8px 0 0 5px; }
         #projects { width: 50%; margin: 0 auto; }
         footer { text-align: center; padding: 20px 0; border-top: 1px solid gray; }
       </style>
@@ -36,7 +38,6 @@
                   </span>
                 % end
               </div>
-              <hr/>
               <a class="clear-filter" href="#">Clear filter</a>
             </div>
             <br/>
@@ -46,12 +47,12 @@
                 <div class="panel panel-primary">
                   <div class="panel-heading">
                     <h3 class="panel-title">
-                      <a class="name" href="{{ project.repo }}">{{ project.name }}</a>
+                      <a class="name" href="{{ project.github_url }}">{{ project.short_name }}</a>
                     </h3>
                   </div>
                   <div class="panel-body">
                     <p class="description">
-                      description...
+                      {{ project.description }}
                     </p>
                   </div>
                   <div class="panel-footer">
