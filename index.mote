@@ -6,65 +6,76 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8" />
-        <title>microrb</title>
-        <style type="text/css">
-          .filter li { display: inline; }
-        </style>
+      <meta charset="UTF-8" />
+      <title>microrb</title>
+      <link href="./bootstrap.min.css" rel="stylesheet">
+      <style type="text/css">
+        .search { width: 100%; margin: 0 auto; display: block; }
+        #projects { width: 50%; margin: 0 auto; }
+        footer { text-align: center; padding: 20px 0; border-top: 1px solid gray; }
+      </style>
     </head>
     <body>
-        <header>
-            <h1>microrb</h1>
-        </header>
-
-        <section id="projects">
-          <div>
-            <input class="search" placeholder="Search..."/>
-          </div>
-          <div>
-            <ul class="filter">
-              <li>Filter by tag:</li>
-              % tags.each do |tag|
-                <li>
-                  <a class="tag-filter" href="#{{ tag }}">{{ tag }}</a>
-                </li>
-              % end
-            </ul>
-            <a class="clear-filter" href="#">Clear filter</a>
-          </div>
-          <ul class="list">
-          % projects.each do |project|
-              <li>
-                <a class="name" href="{{ project.repo }}">{{ project.name }}</a>
-                % if project.tags.any?
-                <p>
-                  Tags: <span class="tags">{{ project.tags.join(", ") }}</span>
-                </p>
+        <div class="container">
+          <header class="page-header">
+            <h1>micro.rb <small>awesome ruby libraries!</small></h1>
+          </header>
+          <section id="projects">
+            <form class="form-inline" method="get">
+              <fieldset>
+                <input class="search input-lg" placeholder="search..."/>
+              </fieldset>
+            </form>
+            <br/>
+            <div class="well">
+              <div class="filter">
+                Filter by tag:
+                % tags.each do |tag|
+                  <span class="label label-default">
+                    <a class="tag-filter" href="#{{ tag }}">{{ tag }}</a>
+                  </span>
                 % end
+              </div>
+              <hr/>
+              <a class="clear-filter" href="#">Clear filter</a>
+            </div>
+            <br/>
+            <ul class="list list-unstyled">
+            % projects.each do |project|
+              <li>
+                <div class="panel panel-primary">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">
+                      <a class="name" href="{{ project.repo }}">{{ project.name }}</a>
+                    </h3>
+                  </div>
+                  <div class="panel-body">
+                    <p class="description">
+                      description...
+                    </p>
+                  </div>
+                  <div class="panel-footer">
+                    <p class="tags">
+                      % project.tags.each do |tag|
+                        <span class="label label-primary tag">{{ tag }}</span>
+                      % end
+                    </p>
+                  </div>
+                </div>
               </li>
-          % end
-          </ul>
-        </section>
+            % end
+            </ul>
+          </section>
+        </div>
 
         <footer>
+          <div class="container">
+            &copy; 2014 <a href="/">microrb.com</a> | <a href="https://github.com/microrb/microrb.com/wiki">what is this?</a>
+          </div>
         </footer>
 
         <script type="text/javascript" src="./ki.js"></script>
         <script type="text/javascript" src="./list.min.js"></script>
-        <script type="text/javascript">
-          var options = { valueNames: ["name", "tags"] };
-          var projectList = new List("projects", options);
-
-          $(".tag-filter").on("click", function() {
-            var tag = this.textContent;
-
-            projectList.filter(function(item) {
-              var tags = item.values().tags.split(", ");
-              return tags.find(function(t) { console.debug(tag); return t == tag });
-            });
-          });
-
-          $(".clear-filter").on("click", function() { projectList.filter(); return false; });
-        </script>
+        <script type="text/javascript" src="./app.js"></script>
     </body>
 </html>
