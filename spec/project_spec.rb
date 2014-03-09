@@ -15,7 +15,7 @@ describe Project do
     it "returns projects with a given tag" do
       projects = Project.by_tag("web")
 
-      expect(projects).to eql([sinatra, cuba])
+      expect(projects).to eql([cuba, sinatra])
     end
   end
 

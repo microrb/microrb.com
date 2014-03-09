@@ -58,7 +58,7 @@ class Project
   end
 
   def self.all
-    @all ||= data.map { |json| new(json) }.sort_by(&:name)
+    @all ||= data.map { |json| new(json) }.sort_by(&:short_name)
   end
 
   def self.by_tag(tag)
