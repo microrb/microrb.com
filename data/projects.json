@@ -13,5 +13,6 @@
   { "name": "solnic/charlatan",     "tags": ["delegation"] },
   { "name": "solnic/virtus",        "tags": ["attributes", "coercion"] },
   { "name": "solnic/coercible",     "tags": ["coercion"] },
-  { "name": "whitequark/ast",       "tags": ["utils", "ast"] }
+  { "name": "whitequark/ast",       "tags": ["utils", "ast"] },
+  { "name": "frodsan/mocoso",       "tags": ["utils"] }
 ]
