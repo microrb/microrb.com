@@ -1,10 +1,9 @@
 #!/bin/bash
 
+make clean
 make
-cp -R public _public
 git checkout gh-pages
-mv _public/* .
-rm -R _public
+cp -R public/* .
 git add .
 git commit -am 'Update'
 git push origin gh-pages

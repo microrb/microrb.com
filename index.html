@@ -1,0 +1,350 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>microrb.com</title>
+      <link href="./assets/bootstrap.min.css" rel="stylesheet">
+      <style type="text/css">
+        .search { width: 100%; margin: 0 auto; display: block; }
+        .filter a { outline: none; text-decoration: none; }
+        .filter .label { display: inline-block; margin: 8px 0 0 5px; }
+        .list { width: 75%; margin: 0 auto; }
+        footer { text-align: center; padding: 20px 0; border-top: 1px solid gray; }
+      </style>
+    </head>
+    <body>
+        <div class="container">
+          <header class="page-header">
+            <h1>
+              <a href="/">micro.rb</a>
+              <small>awesome ruby libraries!</small>
+            </h1>
+          </header>
+          <section id="projects">
+            <form id="search" class="form-inline" method="get">
+              <fieldset>
+                <input class="search input-lg" placeholder="search..."/>
+              </fieldset>
+            </form>
+            <br/>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <div class="panel-title">
+                  Filter by tag
+                </div>
+              </div>
+              <div class="panel-body filter">
+                  <span class="label label-default">
+                    <a class="tag-filter" href="#ast">ast</a>
+                  </span>
+                  <span class="label label-default">
+                    <a class="tag-filter" href="#attributes">attributes</a>
+                  </span>
+                  <span class="label label-default">
+                    <a class="tag-filter" href="#coercion">coercion</a>
+                  </span>
+                  <span class="label label-default">
+                    <a class="tag-filter" href="#database">database</a>
+                  </span>
+                  <span class="label label-default">
+                    <a class="tag-filter" href="#delegation">delegation</a>
+                  </span>
+                  <span class="label label-default">
+                    <a class="tag-filter" href="#key-value">key-value</a>
+                  </span>
+                  <span class="label label-default">
+                    <a class="tag-filter" href="#mapper">mapper</a>
+                  </span>
+                  <span class="label label-default">
+                    <a class="tag-filter" href="#state-machine">state-machine</a>
+                  </span>
+                  <span class="label label-default">
+                    <a class="tag-filter" href="#template">template</a>
+                  </span>
+                  <span class="label label-default">
+                    <a class="tag-filter" href="#utils">utils</a>
+                  </span>
+                  <span class="label label-default">
+                    <a class="tag-filter" href="#web">web</a>
+                  </span>
+              </div>
+            </div>
+            <br/>
+            <ul class="list list-unstyled">
+              <li>
+                <div class="panel panel-primary">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">
+                      <a class="name" href="https://api.github.com/repos/dkubb/abstract_type">abstract_type</a>
+                    </h3>
+                  </div>
+                  <div class="panel-body">
+                    
+                  </div>
+                  <div class="panel-footer">
+                    <div class="tags">
+                        <span class="label label-primary tag">utils</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="panel panel-primary">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">
+                      <a class="name" href="https://api.github.com/repos/mbj/anima">anima</a>
+                    </h3>
+                  </div>
+                  <div class="panel-body">
+                    Read  only attributes initialized from attributes hash
+                  </div>
+                  <div class="panel-footer">
+                    <div class="tags">
+                        <span class="label label-primary tag">attributes</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="panel panel-primary">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">
+                      <a class="name" href="https://api.github.com/repos/whitequark/ast">ast</a>
+                    </h3>
+                  </div>
+                  <div class="panel-body">
+                    A library for working with Abstract Syntax Trees.
+                  </div>
+                  <div class="panel-footer">
+                    <div class="tags">
+                        <span class="label label-primary tag">utils</span>
+                        <span class="label label-primary tag">ast</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="panel panel-primary">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">
+                      <a class="name" href="https://api.github.com/repos/solnic/charlatan">charlatan</a>
+                    </h3>
+                  </div>
+                  <div class="panel-body">
+                    Neat delegation for ruby objects
+                  </div>
+                  <div class="panel-footer">
+                    <div class="tags">
+                        <span class="label label-primary tag">delegation</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="panel panel-primary">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">
+                      <a class="name" href="https://api.github.com/repos/solnic/coercible">coercible</a>
+                    </h3>
+                  </div>
+                  <div class="panel-body">
+                    Powerful, flexible and configurable coercion library. And nothing more.
+                  </div>
+                  <div class="panel-footer">
+                    <div class="tags">
+                        <span class="label label-primary tag">coercion</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="panel panel-primary">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">
+                      <a class="name" href="https://api.github.com/repos/soveran/cuba">cuba</a>
+                    </h3>
+                  </div>
+                  <div class="panel-body">
+                    Rum based microframework for web development.
+                  </div>
+                  <div class="panel-footer">
+                    <div class="tags">
+                        <span class="label label-primary tag">web</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="panel panel-primary">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">
+                      <a class="name" href="https://api.github.com/repos/dkubb/equalizer">equalizer</a>
+                    </h3>
+                  </div>
+                  <div class="panel-body">
+                    Define equality, equivalency and hash methods automatically
+                  </div>
+                  <div class="panel-footer">
+                    <div class="tags">
+                        <span class="label label-primary tag">utils</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="panel panel-primary">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">
+                      <a class="name" href="https://api.github.com/repos/soveran/micromachine">micromachine</a>
+                    </h3>
+                  </div>
+                  <div class="panel-body">
+                    Minimal Finite State Machine
+                  </div>
+                  <div class="panel-footer">
+                    <div class="tags">
+                        <span class="label label-primary tag">state-machine</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="panel panel-primary">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">
+                      <a class="name" href="https://api.github.com/repos/mbj/morpher">morpher</a>
+                    </h3>
+                  </div>
+                  <div class="panel-body">
+                    Predicates / (bijective-)transformation of ruby datastructures with optionally tracked evaluation
+                  </div>
+                  <div class="panel-footer">
+                    <div class="tags">
+                        <span class="label label-primary tag">mapper</span>
+                        <span class="label label-primary tag">ast</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="panel panel-primary">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">
+                      <a class="name" href="https://api.github.com/repos/soveran/mote">mote</a>
+                    </h3>
+                  </div>
+                  <div class="panel-body">
+                    Minimum Operational Template
+                  </div>
+                  <div class="panel-footer">
+                    <div class="tags">
+                        <span class="label label-primary tag">template</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="panel panel-primary">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">
+                      <a class="name" href="https://api.github.com/repos/soveran/nest">nest</a>
+                    </h3>
+                  </div>
+                  <div class="panel-body">
+                    Generate nested namespaced keys for key-value databases.
+                  </div>
+                  <div class="panel-footer">
+                    <div class="tags">
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="panel panel-primary">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">
+                      <a class="name" href="https://api.github.com/repos/soveran/ohm">ohm</a>
+                    </h3>
+                  </div>
+                  <div class="panel-body">
+                    Object-Hash Mapping for Redis
+                  </div>
+                  <div class="panel-footer">
+                    <div class="tags">
+                        <span class="label label-primary tag">key-value</span>
+                        <span class="label label-primary tag">database</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="panel panel-primary">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">
+                      <a class="name" href="https://api.github.com/repos/sinatra/sinatra">sinatra</a>
+                    </h3>
+                  </div>
+                  <div class="panel-body">
+                    Classy web-development dressed in a DSL (official / canonical repo)
+                  </div>
+                  <div class="panel-footer">
+                    <div class="tags">
+                        <span class="label label-primary tag">web</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="panel panel-primary">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">
+                      <a class="name" href="https://api.github.com/repos/mbj/unparser">unparser</a>
+                    </h3>
+                  </div>
+                  <div class="panel-body">
+                    Unparse ruby ASTs from whitequark/parser into equivalent ruby source
+                  </div>
+                  <div class="panel-footer">
+                    <div class="tags">
+                        <span class="label label-primary tag">ast</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="panel panel-primary">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">
+                      <a class="name" href="https://api.github.com/repos/solnic/virtus">virtus</a>
+                    </h3>
+                  </div>
+                  <div class="panel-body">
+                    Attributes on Steroids for Plain Old Ruby Objects
+                  </div>
+                  <div class="panel-footer">
+                    <div class="tags">
+                        <span class="label label-primary tag">attributes</span>
+                        <span class="label label-primary tag">coercion</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </div>
+
+        <footer>
+          <div class="container">
+            &copy; 2014 <a href="/">microrb.com</a> | <a href="https://github.com/microrb/microrb.com/wiki">what is this?</a>
+          </div>
+        </footer>
+
+        <script type="text/javascript" src="./assets/ki.js"></script>
+        <script type="text/javascript" src="./assets/list.min.js"></script>
+        <script type="text/javascript" src="./assets/app.js"></script>
+    </body>
+</html>
