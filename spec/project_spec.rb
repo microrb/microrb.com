@@ -1,5 +1,5 @@
 require "rspec"
-require "./micro"
+require "./lib/micro"
 
 describe Project do
   describe ".get" do

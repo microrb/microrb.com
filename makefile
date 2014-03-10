@@ -1,7 +1,8 @@
 all: public/index.html
 
-public/index.html: index.mote data.json
+public/index.html: sources/index.mote
 	mote $< > $@
+	cp -R sources/assets public
 
 clean:
-	rm public/*.html
+	rm -R public/*.html

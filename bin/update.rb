@@ -1,5 +1,5 @@
 #!/usr/bin/env ruby
 
-require './micro'
+require './lib/micro'
 
 Project.update_data

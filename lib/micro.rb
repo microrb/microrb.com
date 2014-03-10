@@ -1,6 +1,11 @@
 require "virtus"
 require "json"
 require "open-uri"
+require "pathname"
+
+DATA_PATH = Pathname(__FILE__).join('../../data').expand_path
+PROJECTS  = DATA_PATH.join('projects.json')
+DATABASE  = DATA_PATH.join('db.json')
 
 class Tag
   def self.all
@@ -43,14 +48,14 @@ class Project
   attribute :tags, Array[String]
 
   def self.update_data
-    base = JSON.load(File.read("./projects.json"))
+    base = JSON.load(File.read(PROJECTS))
 
     full = base.map do |json|
       puts "updating #{json["name"]}..."
       GithubProject.new(json["name"]).attributes.update(json)
     end
 
-    File.open("data.json", "w") { |f| f << full.to_json }
+    File.open(DATABASE, "w") { |f| f << full.to_json }
   end
 
   def self.get(name)
@@ -66,7 +71,7 @@ class Project
   end
 
   def self.data
-    @data ||= JSON.load(File.read("./data.json"))
+    @data ||= JSON.load(File.read(DATABASE))
   end
 
   def short_name
