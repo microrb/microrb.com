@@ -17,6 +17,9 @@
         .filter .label { display: inline-block; margin: 8px 0 0 5px; }
         .list { width: 75%; margin: 0 auto; }
         footer { text-align: center; padding: 20px 0; border-top: 1px solid gray; }
+        .badges { text-align: left; list-style: none; float: right; }
+        .badges li { color: white; display: inline; padding-right: 5px; }
+        .badge-dark { background-color: #32373B }
       </style>
     </head>
     <body>
@@ -54,6 +57,14 @@
               <li data-tags="{{ project.tag_list }}">
                 <div class="panel panel-primary">
                   <div class="panel-heading">
+                    <ul class="badges">
+                      <li>
+                        stars: <span class="badge badge-dark"> {{ project.stars  }} </span>
+                      </li>
+                      <li>
+                        forks:  <span class="badge badge-dark"> {{ project.forks  }} </span>
+                      </li>
+                    </ul>
                     <h3 class="panel-title">
                       <a class="name" href="{{ project.website }}">{{ project.short_name }}</a>
                     </h3>
