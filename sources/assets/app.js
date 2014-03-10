@@ -1,8 +1,8 @@
-var options = { valueNames: ["name", "description", "tag"] };
+var options = { valueNames: ["name", "description"] };
 var projectList = new List("projects", options);
 var filter;
 
-document.getElementById('search').addEventListener('submit', function(event){ 
+document.getElementById('search').addEventListener('submit', function(event){
     event.preventDefault();
 });
 
@@ -19,7 +19,7 @@ $(".tag-filter").on("click", function() {
     this.parentNode.className = "label label-primary";
 
     projectList.filter(function(item) {
-      var tags = item.values().tag.split(", ");
+      var tags = item.elm.dataset.tags.split(" ");
 
       return tags.indexOf(tag) >= 0;
     });

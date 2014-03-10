@@ -47,6 +47,12 @@ class Project
   attribute :stars, Integer
   attribute :tags, Array[String]
 
+  class << self
+    attr_accessor :database
+  end
+
+  self.database = DATABASE
+
   def self.update_data
     base = JSON.load(File.read(PROJECTS))
 
@@ -76,5 +82,9 @@ class Project
 
   def short_name
     name.split("/").last
+  end
+
+  def tag_list
+    tags.join(" ")
   end
 end

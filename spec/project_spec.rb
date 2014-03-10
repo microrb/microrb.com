@@ -1,5 +1,8 @@
 require "rspec"
+require "pathname"
 require "./lib/micro"
+
+Project.database = Pathname("./spec/fixtures/db/json")
 
 describe Project do
   describe ".get" do
@@ -10,18 +13,25 @@ describe Project do
 
   describe ".by_tag" do
     let(:cuba) { Project.get("soveran/cuba") }
+    let(:hobbit) { Project.get("patriciomacadden/hobbit") }
     let(:sinatra) { Project.get("sinatra/sinatra") }
 
     it "returns projects with a given tag" do
       projects = Project.by_tag("web")
 
-      expect(projects).to eql([cuba, sinatra])
+      expect(projects).to eql([cuba, hobbit, sinatra])
     end
   end
 
   describe "#short_name" do
     it "returns project name" do
       expect(Project.get("solnic/virtus").short_name).to eql("virtus")
+    end
+  end
+
+  describe "#tag_list" do
+    it "returns space-separated tag list" do
+      expect(Project.get("whitequark/ast").tag_list).to eql("utils ast")
     end
   end
 end

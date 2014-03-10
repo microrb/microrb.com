@@ -51,7 +51,7 @@
             <br/>
             <ul class="list list-unstyled">
             % projects.each do |project|
-              <li>
+              <li data-tags="{{ project.tag_list }}">
                 <div class="panel panel-primary">
                   <div class="panel-heading">
                     <h3 class="panel-title">
@@ -59,14 +59,14 @@
                     </h3>
                   </div>
                   <div class="panel-body">
-                    {{ project.description }}
+                    <div class="description">
+                      {{ project.description }}
+                    </div>
                   </div>
                   <div class="panel-footer">
-                    <div class="tags">
-                      % project.tags.each do |tag|
-                        <span class="label label-primary tag">{{ tag }}</span>
-                      % end
-                    </div>
+                    % project.tags.each do |tag|
+                      <span class="label label-primary">{{ tag }}</span>
+                    % end
                   </div>
                 </div>
               </li>
