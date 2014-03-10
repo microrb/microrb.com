@@ -55,7 +55,7 @@
                 <div class="panel panel-primary">
                   <div class="panel-heading">
                     <h3 class="panel-title">
-                      <a class="name" href="{{ project.github_url }}">{{ project.short_name }}</a>
+                      <a class="name" href="{{ project.website }}">{{ project.short_name }}</a>
                     </h3>
                   </div>
                   <div class="panel-body">
