@@ -21,9 +21,7 @@ $(".tag-filter").on("click", function() {
     projectList.filter(function(item) {
       var tags = item.values().tag.split(", ");
 
-      return tags.find(function(t) {
-        return t == tag;
-      });
+      return tags.indexOf(tag) >= 0;
     });
 
     filter = parent;
