@@ -10,6 +10,8 @@
   { "name": "mbj/anima",               "tags": ["attributes"] },
   { "name": "mbj/unparser",            "tags": ["ast"] },
   { "name": "mbj/morpher",             "tags": ["mapper", "ast"] },
+  { "name": "mbj/inflecto",            "tags": ["utils"],
+  { "name": "mbj/concord",             "tags": ["concord"],
   { "name": "solnic/charlatan",        "tags": ["delegation"] },
   { "name": "solnic/virtus",           "tags": ["attributes", "coercion"] },
   { "name": "solnic/coercible",        "tags": ["coercion"] },
