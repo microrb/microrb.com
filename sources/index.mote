@@ -59,10 +59,16 @@
                   <div class="panel-heading">
                     <ul class="badges">
                       <li>
-                        stars: <span class="badge badge-dark"> {{ project.stars  }} </span>
+                        <a href="{{ project.stars_url }}">
+                          <span class="badge badge-dark"> {{ project.stars  }} </span>
+                          stars
+                        </a>
                       </li>
                       <li>
-                        forks:  <span class="badge badge-dark"> {{ project.forks  }} </span>
+                        <a href="{{ project.forks_url }}">
+                          <span class="badge badge-dark"> {{ project.forks  }} </span>
+                          forks
+                        </a>
                       </li>
                     </ul>
                     <h3 class="panel-title">

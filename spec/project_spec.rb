@@ -34,4 +34,16 @@ describe Project do
       expect(Project.get("whitequark/ast").tag_list).to eql("utils ast")
     end
   end
+
+  describe "#stars_url" do
+    it "returns the url to stargazers" do
+      expect(Project.get("whitequark/ast").stars_url).to eql("https://github.com/whitequark/ast/stargazers")
+    end
+  end
+
+  describe "#forks_url" do
+    it "returns the url to forks" do
+      expect(Project.get("whitequark/ast").forks_url).to eql("https://github.com/whitequark/ast/network")
+    end
+  end
 end

@@ -88,4 +88,12 @@ class Project
   def tag_list
     tags.join(" ")
   end
+
+  def stars_url
+    "#{website}/stargazers"
+  end
+
+  def forks_url
+    "#{website}/network"
+  end
 end
