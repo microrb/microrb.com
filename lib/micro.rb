@@ -45,6 +45,7 @@ class Project
   attribute :github_url, String
   attribute :website, String
   attribute :stars, Integer
+  attribute :forks, Integer
   attribute :tags, Array[String]
 
   class << self
