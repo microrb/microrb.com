@@ -15,5 +15,6 @@
   { "name": "solnic/coercible",        "tags": ["coercion"] },
   { "name": "whitequark/ast",          "tags": ["utils", "ast"] },
   { "name": "patriciomacadden/hobbit", "tags": ["web"] },
-  { "name": "frodsan/mocoso",          "tags": ["testing"] }
+  { "name": "frodsan/mocoso",          "tags": ["testing"] },
+  { "name": "ismasan/hash_mapper",     "tags": ["utils","coercion","attributes"] }
 ]
