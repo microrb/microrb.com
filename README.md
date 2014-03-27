@@ -1,10 +1,17 @@
-microrb.com
-===========
+# microrb.com
 
 micro.rb website
 
-How to contribute
------------------
+## Project Submission Policy
+
+  * We don't accept ActiveSupport as a dependency because:
+    * monkey-patching is bad m'kay
+    * implicit dependencies inside activesupport via requires is also bad
+    * it's a huge dependency that is often used without any good reasons (ie "oh I need Hash#symbolize_keys!")
+  * A project must be focused on solving just one problem
+  * At the same time a project must not be anemic
+
+## How to contribute
 
 1. Clone this repository
 2. Add your project's Github path and tags to `data/projects.json`
