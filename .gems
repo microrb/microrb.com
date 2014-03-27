@@ -1,1 +1,3 @@
 mote -v 1.1.2
+virtus -v 1.0.2
+rspec -v 2.14.1
