@@ -1,105 +1,71 @@
+% require 'mote'
+% header = Mote.parse(File.read './sources/header.mote').call
+% footer = Mote.parse(File.read './sources/footer.mote').call
+
 % require "./lib/micro"
 
 % tags = Tag.all
 % projects = Project.all
 
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-      <meta charset="UTF-8" />
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title>microrb.com</title>
-      <link href="./assets/bootstrap.min.css" rel="stylesheet">
-      <style type="text/css">
-        .search { width: 100%; margin: 0 auto; display: block; }
-        .filter a { outline: none; text-decoration: none; }
-        .filter .label { display: inline-block; margin: 8px 0 0 5px; }
-        .list { width: 75%; margin: 0 auto; }
-        footer { text-align: center; padding: 20px 0; border-top: 1px solid gray; }
-        .badges { text-align: left; list-style: none; float: right; }
-        .badges li { color: white; display: inline; padding-right: 5px; }
-        .badge-dark { background-color: #32373B }
-      </style>
-    </head>
-    <body>
-        <div class="container">
-          <header class="page-header">
-            <h1>
-              <a href="/">micro.rb</a>
-              <small>awesome ruby libraries!</small>
-            </h1>
-          </header>
-          <section id="projects">
-            <form id="search" class="form-inline" method="get">
-              <fieldset>
-                <input class="search input-lg" placeholder="search..."/>
-              </fieldset>
-            </form>
-            <br/>
-            <div class="panel panel-default">
-              <div class="panel-heading">
-                <div class="panel-title">
-                  Filter by tag
-                </div>
-              </div>
-              <div class="panel-body filter">
-                % tags.each do |tag|
-                  <span class="label label-default">
-                    <a class="tag-filter" href="#{{ tag }}">{{ tag }}</a>
-                  </span>
-                % end
-              </div>
-            </div>
-            <br/>
-            <ul class="list list-unstyled">
-            % projects.each do |project|
-              <li data-tags="{{ project.tag_list }}">
-                <div class="panel panel-primary">
-                  <div class="panel-heading">
-                    <ul class="badges">
-                      <li>
-                        <a href="{{ project.stars_url }}">
-                          <span class="badge badge-dark"> {{ project.stars  }} </span>
-                          stars
-                        </a>
-                      </li>
-                      <li>
-                        <a href="{{ project.forks_url }}">
-                          <span class="badge badge-dark"> {{ project.forks  }} </span>
-                          forks
-                        </a>
-                      </li>
-                    </ul>
-                    <h3 class="panel-title">
-                      <a class="name" href="{{ project.website }}">{{ project.short_name }}</a>
-                    </h3>
-                  </div>
-                  <div class="panel-body">
-                    <div class="description">
-                      {{ project.description }}
-                    </div>
-                  </div>
-                  <div class="panel-footer">
-                    % project.tags.each do |tag|
-                      <span class="label label-primary">{{ tag }}</span>
-                    % end
-                  </div>
-                </div>
-              </li>
-            % end
-            </ul>
-          </section>
+{{header}}
+<section id="projects">
+  <form id="search" class="form-inline" method="get">
+    <fieldset>
+      <input class="search input-lg" placeholder="search..."/>
+    </fieldset>
+  </form>
+  <br/>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">
+        Filter by tag
+      </div>
+    </div>
+    <div class="panel-body filter">
+      % tags.each do |tag|
+        <span class="label label-default">
+          <a class="tag-filter" href="#{{ tag }}">{{ tag }}</a>
+        </span>
+      % end
+    </div>
+  </div>
+  <br/>
+  <ul class="list list-unstyled">
+  % projects.each do |project|
+    <li data-tags="{{ project.tag_list }}">
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <ul class="badges">
+            <li>
+              <a href="{{ project.stars_url }}">
+                <span class="badge badge-dark"> {{ project.stars  }} </span>
+                stars
+              </a>
+            </li>
+            <li>
+              <a href="{{ project.forks_url }}">
+                <span class="badge badge-dark"> {{ project.forks  }} </span>
+                forks
+              </a>
+            </li>
+          </ul>
+          <h3 class="panel-title">
+            <a class="name" href="{{ project.website }}">{{ project.short_name }}</a>
+          </h3>
         </div>
-
-        <footer>
-          <div class="container">
-            &copy; 2014 <a href="/">microrb.com</a> | <a href="https://github.com/microrb/microrb.com/wiki">what is this?</a>
+        <div class="panel-body">
+          <div class="description">
+            {{ project.description }}
           </div>
-        </footer>
-
-        <script type="text/javascript" src="./assets/ki.js"></script>
-        <script type="text/javascript" src="./assets/list.min.js"></script>
-        <script type="text/javascript" src="./assets/app.js"></script>
-    </body>
-</html>
+        </div>
+        <div class="panel-footer">
+          % project.tags.each do |tag|
+            <span class="label label-primary">{{ tag }}</span>
+          % end
+        </div>
+      </div>
+    </li>
+  % end
+  </ul>
+</section>
+{{footer}}

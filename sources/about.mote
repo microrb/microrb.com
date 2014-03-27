@@ -1,0 +1,15 @@
+% require 'mote'
+% header = Mote.parse(File.read './sources/header.mote').call
+% footer = Mote.parse(File.read './sources/footer.mote').call
+
+{{header}}
+<section id="about">
+  <h2>What is this?</h2>
+  <p>
+    micro.rb aims at gathering small well focused ruby libraries, that do one thing and do it well. We are concerned about <strong>focus</strong> and <strong>clarity</strong>. Other metrics such as the number of dependencies and the lines of code also matter
+  </p>
+  <p>
+  We are still figuring out exactly what a <em>micro library</em> is - if you want to chime in please check out <a href="https://github.com/microrb/microrb.com/issues/2">this github issue</a>.
+  </p>
+</section>
+{{footer}}

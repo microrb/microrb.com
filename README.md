@@ -6,7 +6,7 @@ micro.rb website
 Generate HTML
 -------------
 
-Make sure you have [mote][mote] installed, then:
+Make sure you have [mote][mote] and [virtus](https://github.com/solnic/virtus) installed, then:
 
 ```terminal
 $ make
