@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>microrb.com</title>
+      <link href="./assets/bootstrap.min.css" rel="stylesheet">
+      <style type="text/css">
+        .search { width: 100%; margin: 0 auto; display: block; }
+        .filter a { outline: none; text-decoration: none; }
+        .filter .label { display: inline-block; margin: 8px 0 0 5px; }
+        .list { width: 75%; margin: 0 auto; }
+        footer { text-align: center; padding: 20px 0; border-top: 1px solid gray; }
+        .badges { text-align: left; list-style: none; float: right; }
+        .badges li { color: white; display: inline; padding-right: 5px; }
+        .badge-dark { background-color: #32373B }
+      </style>
+    </head>
+    <body>
+        <div class="container">
+          <header class="page-header">
+            <h1>
+              <a href="/">micro.rb</a>
+              <small>awesome ruby libraries!</small>
+            </h1>
+          </header>
