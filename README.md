@@ -10,7 +10,8 @@ micro.rb website
     * it's a huge dependency that is often used without any good reasons (ie "oh I need Hash#symbolize_keys!")
   * A project must be focused on solving just one problem
   * At the same time a project must not be anemic
-
+  * A project must follow [semantic versioning](http://semver.org)
+  
 ## How to contribute
 
 1. Clone this repository
