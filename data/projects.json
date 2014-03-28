@@ -23,5 +23,8 @@
    { "name": "frodsan/json-serializer",    "tags": ["utils", "serializer"] },
    { "name": "asquera/psych-inherit-file", "tags": ["utils", "parsing", "yml"] },
    { "name": "guilleiguaran/nancy",        "tags": ["web"] },
-   { "name": "pragtob/after_do",           "tags": ["utils", "aop"] }
+   { "name": "pragtob/after_do",           "tags": ["utils", "aop"] },
+   { "name": "myobie/rep",                 "tags": ["serializer", "decorator"] },
+   { "name": "myobie/mashed",              "tags": ["utils"] },
+   { "name": "myobie/factories",           "tags": ["testing"] }
  ]
