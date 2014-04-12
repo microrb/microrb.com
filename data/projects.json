@@ -7,6 +7,7 @@
    { "name": "sinatra/sinatra",            "tags": ["web", "framework"] },
    { "name": "dkubb/equalizer",            "tags": ["utils"] },
    { "name": "dkubb/abstract_type",        "tags": ["utils"] },
+   { "name": "elmassimo/queryable",        "tags": ["database"] },
    { "name": "mbj/anima",                  "tags": ["attributes"] },
    { "name": "mbj/unparser",               "tags": ["ast"] },
    { "name": "mbj/morpher",                "tags": ["mapper", "ast"] },
