@@ -35,5 +35,10 @@
    { "name": "myobie/factories",           "tags": ["testing"] },
    { "name": "tcrayford/values",           "tags": ["values", "attributes", "immutability"] },
    { "name": "elmassimo/queryable",        "tags": ["database", "query", "dsl"] },
-   { "name": "frodsan/hache",              "tags": ["html", "sanitization"] }
+   { "name": "frodsan/hache",              "tags": ["html", "sanitization"] },
+   { "name": "snusnus/lupo",               "tags": ["enumerable", "support"] },
+   { "name": "snusnus/procto",             "tags": ["method-object", "support"] },
+   { "name": "snusnus/cookie",             "tags": ["http"] },
+   { "name": "snusnus/substation",         "tags": ["framework"] },
+   { "name": "snusnus/subway",             "tags": ["framework", "web", "rack"] }
  ]
