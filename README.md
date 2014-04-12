@@ -12,13 +12,21 @@ micro.rb website
   * At the same time a project must not be anemic
   * A project must follow [semantic versioning](http://semver.org)
   
-## How to contribute
+## How to submit your project
+
+Submit an issue with:
+
+* URL to your project
+* Description of what it does if you didn't do it already in the project's README
+* Indicate if it's beeing already used in production environments (even if it's below 1.0)
+
+## How to preview your project locally
 
 1. Clone this repository
 2. Add your project's Github path and tags to `data/projects.json`
 3. Update project data with `ruby bin/update.rb`
-4. Commit to a branch and push the changes
-5. Go to https://github.com/microrb and create a Pull Request for your branch.
+4. Generate the site `make`
+5. Open public/index.html
 
 Generate HTML
 -------------
