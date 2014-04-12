@@ -5,6 +5,7 @@
    { "name": "soveran/micromachine",       "tags": ["state-machine"] },
    { "name": "soveran/nest",               "tags": [] },
    { "name": "sinatra/sinatra",            "tags": ["web", "framework"] },
+   { "name": "dkubb/adamantium",           "tags": ["immutability"] },
    { "name": "dkubb/equalizer",            "tags": ["utils"] },
    { "name": "dkubb/abstract_type",        "tags": ["utils"] },
    { "name": "mbj/anima",                  "tags": ["attributes"] },
