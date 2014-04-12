@@ -36,9 +36,9 @@
    { "name": "tcrayford/values",           "tags": ["values", "attributes", "immutability"] },
    { "name": "elmassimo/queryable",        "tags": ["database", "query", "dsl"] },
    { "name": "frodsan/hache",              "tags": ["html", "sanitization"] },
-   { "name": "snusnus/lupo",               "tags": ["enumerable", "support"] },
-   { "name": "snusnus/procto",             "tags": ["method-object", "support"] },
-   { "name": "snusnus/cookie",             "tags": ["http"] },
-   { "name": "snusnus/substation",         "tags": ["framework"] },
-   { "name": "snusnus/subway",             "tags": ["framework", "web", "rack"] }
+   { "name": "snusnu/lupo",                "tags": ["enumerable", "support"] },
+   { "name": "snusnu/procto",              "tags": ["method-object", "support"] },
+   { "name": "snusnu/cookie",              "tags": ["http"] },
+   { "name": "snusnu/substation",          "tags": ["framework"] },
+   { "name": "snusnu/subway",              "tags": ["framework", "web", "rack"] }
  ]
