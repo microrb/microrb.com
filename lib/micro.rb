@@ -56,11 +56,13 @@ class Project
 
   def self.update_data
     base = JSON.load(File.read(PROJECTS))
+    all = Project.all.map(&:name)
 
     full = base.map do |json|
-      puts "updating #{json["name"]}..."
+      next if all.include?(json["name"])
+      puts "adding #{json["name"]}..."
       GithubProject.new(json["name"]).attributes.update(json)
-      sleep 1
+      sleep 1.5
     end
 
     File.open(DATABASE, "w") { |f| f << full.to_json }
