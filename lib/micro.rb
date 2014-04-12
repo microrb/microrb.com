@@ -60,6 +60,7 @@ class Project
     full = base.map do |json|
       puts "updating #{json["name"]}..."
       GithubProject.new(json["name"]).attributes.update(json)
+      sleep 1
     end
 
     File.open(DATABASE, "w") { |f| f << full.to_json }
