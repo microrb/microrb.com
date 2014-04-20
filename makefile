@@ -1,6 +1,7 @@
 all: public/index.html public/about.html
 
 public/index.html: sources/index.mote
+	[ -d public ] || mkdir public
 	mote $< > $@
 	cp -R sources/assets public
 
