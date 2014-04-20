@@ -40,5 +40,9 @@
    { "name": "snusnu/procto",              "tags": ["method-object", "support"] },
    { "name": "snusnu/cookie",              "tags": ["http"] },
    { "name": "snusnu/substation",          "tags": ["framework"] },
-   { "name": "snusnu/subway",              "tags": ["framework", "web", "rack"] }
+   { "name": "snusnu/subway",              "tags": ["framework", "web", "rack"] },
+   { "name": "plexus/fzip",                "tags": ["data", "functional"] },
+   { "name": "plexus/ting",                "tags": ["language"] },
+   { "name": "plexus/hexp",                "tags": ["web", "dom", "ast"] },
+   { "name": "plexus/asset_packer",        "tags": ["web", "assets"] }
  ]
