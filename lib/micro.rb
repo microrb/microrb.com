@@ -14,7 +14,7 @@ class Tag
 end
 
 class GithubProject
-  URL = "https://api.github.com/repos/%s".freeze
+  URL = "https://api.github.com/repos/%s?access_token=%s".freeze
 
   MAPPING = {
     "html_url" => "website",
@@ -28,7 +28,7 @@ class GithubProject
 
   def initialize(id)
     @id = id
-    @url = URL % id
+    @url = URL % [id, ENV['OAUTH_TOKEN']]
     @data = JSON.parse(open(@url).read)
   end
 

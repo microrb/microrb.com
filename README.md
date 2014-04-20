@@ -11,7 +11,7 @@ micro.rb website
   * A project must be focused on solving just one problem
   * At the same time a project must not be anemic
   * A project must follow [semantic versioning](http://semver.org)
-  
+
 ## How to submit your project
 
 Submit an issue with:
@@ -22,11 +22,21 @@ Submit an issue with:
 
 ## How to preview your project locally
 
+You will need a Github API access token first, [register an application](https://github.com/settings/applications/new), then do a
+
+```
+curl -u"username" -d '{"scopes":["public_repo"],"client_id":"...","client_secret":"...","note":"update microrb"}' https://api.github.com/authorizations
+```
+
+filling in your username, `client_id` and `client_secret`. Note down the token in the response.
+
+
 1. Clone this repository
-2. Add your project's Github path and tags to `data/projects.json`
-3. Update project data with `ruby bin/update.rb`
-4. Generate the site `make`
-5. Open public/index.html
+2. Run `bundle` to install the dependencies
+3. Add your project's Github path and tags to `data/projects.json`
+4. Update project data with `OAUTH_TOKEN=... ruby bin/update.rb` using the token acquired above
+5. Generate the site with `make`
+6. Open public/index.html
 
 Generate HTML
 -------------
