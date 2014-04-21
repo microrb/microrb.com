@@ -44,5 +44,6 @@
    { "name": "plexus/fzip",                "tags": ["data", "functional"] },
    { "name": "plexus/ting",                "tags": ["language"] },
    { "name": "plexus/hexp",                "tags": ["web", "dom", "ast"] },
-   { "name": "plexus/asset_packer",        "tags": ["web", "assets"] }
+   { "name": "plexus/asset_packer",        "tags": ["web", "assets"] },
+   { "name": "floere/phony",               "tags": ["parsing", "phone"] },
  ]
