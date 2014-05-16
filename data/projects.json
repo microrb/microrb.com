@@ -24,6 +24,7 @@
    { "name": "frodsan/json-serializer",    "tags": ["utils", "serializer"] },
    { "name": "asquera/psych-inherit-file", "tags": ["utils", "parsing", "yml"] },
    { "name": "guilleiguaran/nancy",        "tags": ["web"] },
+   { "name": "godfat/rubyqc",              "tags": ["testing"] },
    { "name": "pragtob/after_do",           "tags": ["utils", "aop"] },
    { "name": "janlelis/clipboard",         "tags": ["utils"] },
    { "name": "janlelis/paint",             "tags": ["utils", "terminal", "ansi"] },
