@@ -47,5 +47,8 @@
    { "name": "plexus/asset_packer",        "tags": ["web", "assets"] },
    { "name": "ahawkins/interchange",       "tags": ["facades"] },
    { "name": "ahawkins/tnt",               "tags": ["exceptions"] },
-   { "name": "ahawkins/lift",              "tags": ["attributes"] }
+   { "name": "ahawkins/lift",              "tags": ["attributes"] },
+   { "name": "godfat/jellyfish",           "tags": ["web", "framework", "api"] },
+   { "name": "godfat/muack",               "tags": ["testing", "mocks"] },
+   { "name": "godfat/rubyqc",              "tags": ["testing", "quickcheck"] }
  ]
