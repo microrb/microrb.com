@@ -10,11 +10,21 @@
       <title>microrb.com</title>
       <link href="./assets/bootstrap.min.css" rel="stylesheet">
       <style type="text/css">
+        html { position: relative; min-height: 100%; }
+        body { margin-bottom: 60px; }
         .search { width: 100%; margin: 0 auto; display: block; }
         .filter a { outline: none; text-decoration: none; }
         .filter .label { display: inline-block; margin: 8px 0 0 5px; }
         .list { width: 75%; margin: 0 auto; }
-        footer { text-align: center; padding: 20px 0; border-top: 1px solid gray; }
+        footer {
+          text-align: center;
+          padding: 20px 0;
+          border-top: 1px solid gray;
+          position: absolute;
+          bottom: 0;
+          width: 100%;
+          height: 60px;
+        }
         .badges { text-align: left; list-style: none; float: right; }
         .badges li { color: white; display: inline; padding-right: 5px; }
         .badge-dark { background-color: #32373B }
@@ -47,6 +57,9 @@
         </span>
         <span class="label label-default">
           <a class="tag-filter" href="#aop">aop</a>
+        </span>
+        <span class="label label-default">
+          <a class="tag-filter" href="#api">api</a>
         </span>
         <span class="label label-default">
           <a class="tag-filter" href="#assets">assets</a>
@@ -85,6 +98,12 @@
           <a class="tag-filter" href="#events">events</a>
         </span>
         <span class="label label-default">
+          <a class="tag-filter" href="#exceptions">exceptions</a>
+        </span>
+        <span class="label label-default">
+          <a class="tag-filter" href="#facades">facades</a>
+        </span>
+        <span class="label label-default">
           <a class="tag-filter" href="#framework">framework</a>
         </span>
         <span class="label label-default">
@@ -112,13 +131,22 @@
           <a class="tag-filter" href="#mapper">mapper</a>
         </span>
         <span class="label label-default">
+          <a class="tag-filter" href="#memoization">memoization</a>
+        </span>
+        <span class="label label-default">
           <a class="tag-filter" href="#method-object">method-object</a>
+        </span>
+        <span class="label label-default">
+          <a class="tag-filter" href="#mocks">mocks</a>
         </span>
         <span class="label label-default">
           <a class="tag-filter" href="#parsing">parsing</a>
         </span>
         <span class="label label-default">
           <a class="tag-filter" href="#query">query</a>
+        </span>
+        <span class="label label-default">
+          <a class="tag-filter" href="#quickcheck">quickcheck</a>
         </span>
         <span class="label label-default">
           <a class="tag-filter" href="#rack">rack</a>
@@ -166,7 +194,7 @@
           <ul class="badges">
             <li>
               <a href="https://github.com/dkubb/abstract_type/stargazers">
-                <span class="badge badge-dark"> 14 </span>
+                <span class="badge badge-dark"> 15 </span>
                 stars
               </a>
             </li>
@@ -197,7 +225,7 @@
           <ul class="badges">
             <li>
               <a href="https://github.com/dkubb/adamantium/stargazers">
-                <span class="badge badge-dark"> 72 </span>
+                <span class="badge badge-dark"> 73 </span>
                 stars
               </a>
             </li>
@@ -228,7 +256,7 @@
           <ul class="badges">
             <li>
               <a href="https://github.com/PragTob/after_do/stargazers">
-                <span class="badge badge-dark"> 36 </span>
+                <span class="badge badge-dark"> 37 </span>
                 stars
               </a>
             </li>
@@ -260,7 +288,7 @@
           <ul class="badges">
             <li>
               <a href="https://github.com/mbj/anima/stargazers">
-                <span class="badge badge-dark"> 25 </span>
+                <span class="badge badge-dark"> 31 </span>
                 stars
               </a>
             </li>
@@ -291,7 +319,7 @@
           <ul class="badges">
             <li>
               <a href="https://github.com/plexus/asset_packer/stargazers">
-                <span class="badge badge-dark"> 0 </span>
+                <span class="badge badge-dark"> 4 </span>
                 stars
               </a>
             </li>
@@ -323,7 +351,7 @@
           <ul class="badges">
             <li>
               <a href="https://github.com/whitequark/ast/stargazers">
-                <span class="badge badge-dark"> 15 </span>
+                <span class="badge badge-dark"> 17 </span>
                 stars
               </a>
             </li>
@@ -355,7 +383,7 @@
           <ul class="badges">
             <li>
               <a href="https://github.com/solnic/charlatan/stargazers">
-                <span class="badge badge-dark"> 33 </span>
+                <span class="badge badge-dark"> 36 </span>
                 stars
               </a>
             </li>
@@ -386,7 +414,7 @@
           <ul class="badges">
             <li>
               <a href="https://github.com/janlelis/clipboard/stargazers">
-                <span class="badge badge-dark"> 97 </span>
+                <span class="badge badge-dark"> 98 </span>
                 stars
               </a>
             </li>
@@ -417,13 +445,13 @@
           <ul class="badges">
             <li>
               <a href="https://github.com/solnic/coercible/stargazers">
-                <span class="badge badge-dark"> 91 </span>
+                <span class="badge badge-dark"> 92 </span>
                 stars
               </a>
             </li>
             <li>
               <a href="https://github.com/solnic/coercible/network">
-                <span class="badge badge-dark"> 8 </span>
+                <span class="badge badge-dark"> 9 </span>
                 forks
               </a>
             </li>
@@ -510,7 +538,7 @@
           <ul class="badges">
             <li>
               <a href="https://github.com/soveran/cuba/stargazers">
-                <span class="badge badge-dark"> 560 </span>
+                <span class="badge badge-dark"> 581 </span>
                 stars
               </a>
             </li>
@@ -573,13 +601,13 @@
           <ul class="badges">
             <li>
               <a href="https://github.com/dkubb/equalizer/stargazers">
-                <span class="badge badge-dark"> 60 </span>
+                <span class="badge badge-dark"> 62 </span>
                 stars
               </a>
             </li>
             <li>
               <a href="https://github.com/dkubb/equalizer/network">
-                <span class="badge badge-dark"> 3 </span>
+                <span class="badge badge-dark"> 4 </span>
                 forks
               </a>
             </li>
@@ -635,7 +663,7 @@
           <ul class="badges">
             <li>
               <a href="https://github.com/plexus/fzip/stargazers">
-                <span class="badge badge-dark"> 0 </span>
+                <span class="badge badge-dark"> 1 </span>
                 stars
               </a>
             </li>
@@ -699,7 +727,7 @@
           <ul class="badges">
             <li>
               <a href="https://github.com/plexus/hexp/stargazers">
-                <span class="badge badge-dark"> 36 </span>
+                <span class="badge badge-dark"> 40 </span>
                 stars
               </a>
             </li>
@@ -732,13 +760,13 @@
           <ul class="badges">
             <li>
               <a href="https://github.com/patriciomacadden/hobbit/stargazers">
-                <span class="badge badge-dark"> 158 </span>
+                <span class="badge badge-dark"> 171 </span>
                 stars
               </a>
             </li>
             <li>
               <a href="https://github.com/patriciomacadden/hobbit/network">
-                <span class="badge badge-dark"> 10 </span>
+                <span class="badge badge-dark"> 11 </span>
                 forks
               </a>
             </li>
@@ -789,6 +817,70 @@
         </div>
       </div>
     </li>
+    <li data-tags="facades">
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <ul class="badges">
+            <li>
+              <a href="https://github.com/ahawkins/interchange/stargazers">
+                <span class="badge badge-dark"> 1 </span>
+                stars
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/ahawkins/interchange/network">
+                <span class="badge badge-dark"> 0 </span>
+                forks
+              </a>
+            </li>
+          </ul>
+          <h3 class="panel-title">
+            <a class="name" href="https://github.com/ahawkins/interchange">interchange</a>
+          </h3>
+        </div>
+        <div class="panel-body">
+          <div class="description">
+            Facades around interchangeable objects & system boundaries
+          </div>
+        </div>
+        <div class="panel-footer">
+            <span class="label label-primary">facades</span>
+        </div>
+      </div>
+    </li>
+    <li data-tags="web framework api">
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <ul class="badges">
+            <li>
+              <a href="https://github.com/godfat/jellyfish/stargazers">
+                <span class="badge badge-dark"> 30 </span>
+                stars
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/godfat/jellyfish/network">
+                <span class="badge badge-dark"> 1 </span>
+                forks
+              </a>
+            </li>
+          </ul>
+          <h3 class="panel-title">
+            <a class="name" href="https://github.com/godfat/jellyfish">jellyfish</a>
+          </h3>
+        </div>
+        <div class="panel-body">
+          <div class="description">
+            Pico web framework for building API-centric web applications
+          </div>
+        </div>
+        <div class="panel-footer">
+            <span class="label label-primary">web</span>
+            <span class="label label-primary">framework</span>
+            <span class="label label-primary">api</span>
+        </div>
+      </div>
+    </li>
     <li data-tags="utils serializer">
       <div class="panel panel-primary">
         <div class="panel-heading">
@@ -801,7 +893,7 @@
             </li>
             <li>
               <a href="https://github.com/frodsan/json-serializer/network">
-                <span class="badge badge-dark"> 0 </span>
+                <span class="badge badge-dark"> 1 </span>
                 forks
               </a>
             </li>
@@ -821,13 +913,44 @@
         </div>
       </div>
     </li>
+    <li data-tags="attributes">
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <ul class="badges">
+            <li>
+              <a href="https://github.com/ahawkins/lift/stargazers">
+                <span class="badge badge-dark"> 1 </span>
+                stars
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/ahawkins/lift/network">
+                <span class="badge badge-dark"> 0 </span>
+                forks
+              </a>
+            </li>
+          </ul>
+          <h3 class="panel-title">
+            <a class="name" href="https://github.com/ahawkins/lift">lift</a>
+          </h3>
+        </div>
+        <div class="panel-body">
+          <div class="description">
+            Hash + Block initialization for Ruby
+          </div>
+        </div>
+        <div class="panel-footer">
+            <span class="label label-primary">attributes</span>
+        </div>
+      </div>
+    </li>
     <li data-tags="enumerable support">
       <div class="panel panel-primary">
         <div class="panel-heading">
           <ul class="badges">
             <li>
               <a href="https://github.com/snusnu/lupo/stargazers">
-                <span class="badge badge-dark"> 6 </span>
+                <span class="badge badge-dark"> 8 </span>
                 stars
               </a>
             </li>
@@ -884,13 +1007,45 @@
         </div>
       </div>
     </li>
+    <li data-tags="memoization utils">
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <ul class="badges">
+            <li>
+              <a href="https://github.com/rhysd/memo/stargazers">
+                <span class="badge badge-dark"> 0 </span>
+                stars
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/rhysd/memo/network">
+                <span class="badge badge-dark"> 1 </span>
+                forks
+              </a>
+            </li>
+          </ul>
+          <h3 class="panel-title">
+            <a class="name" href="https://github.com/rhysd/memo">memo</a>
+          </h3>
+        </div>
+        <div class="panel-body">
+          <div class="description">
+            define memoized procedure easily in Ruby
+          </div>
+        </div>
+        <div class="panel-footer">
+            <span class="label label-primary">memoization</span>
+            <span class="label label-primary">utils</span>
+        </div>
+      </div>
+    </li>
     <li data-tags="state-machine">
       <div class="panel panel-primary">
         <div class="panel-heading">
           <ul class="badges">
             <li>
               <a href="https://github.com/soveran/micromachine/stargazers">
-                <span class="badge badge-dark"> 208 </span>
+                <span class="badge badge-dark"> 213 </span>
                 stars
               </a>
             </li>
@@ -952,13 +1107,13 @@
           <ul class="badges">
             <li>
               <a href="https://github.com/mbj/morpher/stargazers">
-                <span class="badge badge-dark"> 41 </span>
+                <span class="badge badge-dark"> 42 </span>
                 stars
               </a>
             </li>
             <li>
               <a href="https://github.com/mbj/morpher/network">
-                <span class="badge badge-dark"> 2 </span>
+                <span class="badge badge-dark"> 4 </span>
                 forks
               </a>
             </li>
@@ -1009,19 +1164,51 @@
         </div>
       </div>
     </li>
+    <li data-tags="testing mocks">
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <ul class="badges">
+            <li>
+              <a href="https://github.com/godfat/muack/stargazers">
+                <span class="badge badge-dark"> 9 </span>
+                stars
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/godfat/muack/network">
+                <span class="badge badge-dark"> 0 </span>
+                forks
+              </a>
+            </li>
+          </ul>
+          <h3 class="panel-title">
+            <a class="name" href="https://github.com/godfat/muack">muack</a>
+          </h3>
+        </div>
+        <div class="panel-body">
+          <div class="description">
+            Muack -- Yet Another Mocking Library
+          </div>
+        </div>
+        <div class="panel-footer">
+            <span class="label label-primary">testing</span>
+            <span class="label label-primary">mocks</span>
+        </div>
+      </div>
+    </li>
     <li data-tags="web">
       <div class="panel panel-primary">
         <div class="panel-heading">
           <ul class="badges">
             <li>
               <a href="https://github.com/guilleiguaran/nancy/stargazers">
-                <span class="badge badge-dark"> 27 </span>
+                <span class="badge badge-dark"> 33 </span>
                 stars
               </a>
             </li>
             <li>
               <a href="https://github.com/guilleiguaran/nancy/network">
-                <span class="badge badge-dark"> 4 </span>
+                <span class="badge badge-dark"> 5 </span>
                 forks
               </a>
             </li>
@@ -1046,7 +1233,7 @@
           <ul class="badges">
             <li>
               <a href="https://github.com/soveran/nest/stargazers">
-                <span class="badge badge-dark"> 134 </span>
+                <span class="badge badge-dark"> 137 </span>
                 stars
               </a>
             </li>
@@ -1076,13 +1263,13 @@
           <ul class="badges">
             <li>
               <a href="https://github.com/soveran/ohm/stargazers">
-                <span class="badge badge-dark"> 762 </span>
+                <span class="badge badge-dark"> 777 </span>
                 stars
               </a>
             </li>
             <li>
               <a href="https://github.com/soveran/ohm/network">
-                <span class="badge badge-dark"> 97 </span>
+                <span class="badge badge-dark"> 100 </span>
                 forks
               </a>
             </li>
@@ -1108,7 +1295,7 @@
           <ul class="badges">
             <li>
               <a href="https://github.com/janlelis/paint/stargazers">
-                <span class="badge badge-dark"> 124 </span>
+                <span class="badge badge-dark"> 127 </span>
                 stars
               </a>
             </li>
@@ -1141,7 +1328,7 @@
           <ul class="badges">
             <li>
               <a href="https://github.com/snusnu/procto/stargazers">
-                <span class="badge badge-dark"> 6 </span>
+                <span class="badge badge-dark"> 7 </span>
                 stars
               </a>
             </li>
@@ -1206,7 +1393,7 @@
           <ul class="badges">
             <li>
               <a href="https://github.com/ElMassimo/queryable/stargazers">
-                <span class="badge badge-dark"> 5 </span>
+                <span class="badge badge-dark"> 6 </span>
                 stars
               </a>
             </li>
@@ -1327,19 +1514,51 @@
         </div>
       </div>
     </li>
+    <li data-tags="testing quickcheck">
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <ul class="badges">
+            <li>
+              <a href="https://github.com/godfat/rubyqc/stargazers">
+                <span class="badge badge-dark"> 9 </span>
+                stars
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/godfat/rubyqc/network">
+                <span class="badge badge-dark"> 0 </span>
+                forks
+              </a>
+            </li>
+          </ul>
+          <h3 class="panel-title">
+            <a class="name" href="https://github.com/godfat/rubyqc">rubyqc</a>
+          </h3>
+        </div>
+        <div class="panel-body">
+          <div class="description">
+            RubyQC -- A conceptual QuickCheck library for Ruby
+          </div>
+        </div>
+        <div class="panel-footer">
+            <span class="label label-primary">testing</span>
+            <span class="label label-primary">quickcheck</span>
+        </div>
+      </div>
+    </li>
     <li data-tags="web framework">
       <div class="panel panel-primary">
         <div class="panel-heading">
           <ul class="badges">
             <li>
               <a href="https://github.com/sinatra/sinatra/stargazers">
-                <span class="badge badge-dark"> 5794 </span>
+                <span class="badge badge-dark"> 5881 </span>
                 stars
               </a>
             </li>
             <li>
               <a href="https://github.com/sinatra/sinatra/network">
-                <span class="badge badge-dark"> 896 </span>
+                <span class="badge badge-dark"> 914 </span>
                 forks
               </a>
             </li>
@@ -1429,13 +1648,13 @@
           <ul class="badges">
             <li>
               <a href="https://github.com/plexus/ting/stargazers">
-                <span class="badge badge-dark"> 19 </span>
+                <span class="badge badge-dark"> 26 </span>
                 stars
               </a>
             </li>
             <li>
               <a href="https://github.com/plexus/ting/network">
-                <span class="badge badge-dark"> 4 </span>
+                <span class="badge badge-dark"> 5 </span>
                 forks
               </a>
             </li>
@@ -1454,13 +1673,44 @@
         </div>
       </div>
     </li>
+    <li data-tags="exceptions">
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <ul class="badges">
+            <li>
+              <a href="https://github.com/ahawkins/tnt/stargazers">
+                <span class="badge badge-dark"> 3 </span>
+                stars
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/ahawkins/tnt/network">
+                <span class="badge badge-dark"> 0 </span>
+                forks
+              </a>
+            </li>
+          </ul>
+          <h3 class="panel-title">
+            <a class="name" href="https://github.com/ahawkins/tnt">tnt</a>
+          </h3>
+        </div>
+        <div class="panel-body">
+          <div class="description">
+            Make understandable and actionable error classes easily
+          </div>
+        </div>
+        <div class="panel-footer">
+            <span class="label label-primary">exceptions</span>
+        </div>
+      </div>
+    </li>
     <li data-tags="ast">
       <div class="panel panel-primary">
         <div class="panel-heading">
           <ul class="badges">
             <li>
               <a href="https://github.com/mbj/unparser/stargazers">
-                <span class="badge badge-dark"> 40 </span>
+                <span class="badge badge-dark"> 44 </span>
                 stars
               </a>
             </li>
@@ -1491,7 +1741,7 @@
           <ul class="badges">
             <li>
               <a href="https://github.com/janlelis/value_struct/stargazers">
-                <span class="badge badge-dark"> 12 </span>
+                <span class="badge badge-dark"> 13 </span>
                 stars
               </a>
             </li>
@@ -1523,13 +1773,13 @@
           <ul class="badges">
             <li>
               <a href="https://github.com/tcrayford/Values/stargazers">
-                <span class="badge badge-dark"> 163 </span>
+                <span class="badge badge-dark"> 166 </span>
                 stars
               </a>
             </li>
             <li>
               <a href="https://github.com/tcrayford/Values/network">
-                <span class="badge badge-dark"> 17 </span>
+                <span class="badge badge-dark"> 18 </span>
                 forks
               </a>
             </li>
@@ -1556,13 +1806,13 @@
           <ul class="badges">
             <li>
               <a href="https://github.com/solnic/virtus/stargazers">
-                <span class="badge badge-dark"> 1792 </span>
+                <span class="badge badge-dark"> 1863 </span>
                 stars
               </a>
             </li>
             <li>
               <a href="https://github.com/solnic/virtus/network">
-                <span class="badge badge-dark"> 113 </span>
+                <span class="badge badge-dark"> 120 </span>
                 forks
               </a>
             </li>
@@ -1588,7 +1838,7 @@
           <ul class="badges">
             <li>
               <a href="https://github.com/krisleech/wisper/stargazers">
-                <span class="badge badge-dark"> 578 </span>
+                <span class="badge badge-dark"> 618 </span>
                 stars
               </a>
             </li>
