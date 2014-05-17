@@ -44,5 +44,8 @@
    { "name": "plexus/fzip",                "tags": ["data", "functional"] },
    { "name": "plexus/ting",                "tags": ["language"] },
    { "name": "plexus/hexp",                "tags": ["web", "dom", "ast"] },
-   { "name": "plexus/asset_packer",        "tags": ["web", "assets"] }
+   { "name": "plexus/asset_packer",        "tags": ["web", "assets"] },
+   { "name": "ahawkins/interchange",       "tags": ["facades"] },
+   { "name": "ahawkins/tnt",               "tags": ["exceptions"] },
+   { "name": "ahawkins/lift",              "tags": ["attributes"] }
  ]
