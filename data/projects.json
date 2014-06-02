@@ -51,5 +51,6 @@
    { "name": "godfat/jellyfish",           "tags": ["web", "framework", "api"] },
    { "name": "godfat/muack",               "tags": ["testing", "mocks"] },
    { "name": "godfat/rubyqc",              "tags": ["testing", "quickcheck"] },
-   { "name": "rhysd/memo",                 "tags": ["memoization", "utils"] }
+   { "name": "rhysd/memo",                 "tags": ["memoization", "utils"] },
+   { "name": "restorando/rbrules",         "tags": ["rules"] }
  ]
