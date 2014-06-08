@@ -42,6 +42,7 @@
    { "name": "snusnu/substation",          "tags": ["framework"] },
    { "name": "snusnu/subway",              "tags": ["framework", "web", "rack"] },
    { "name": "plexus/fzip",                "tags": ["data", "functional"] },
+   { "name": "unsymbol/ribimaybe",         "tags": ["data", "functional"] },
    { "name": "plexus/ting",                "tags": ["language"] },
    { "name": "plexus/hexp",                "tags": ["web", "dom", "ast"] },
    { "name": "plexus/asset_packer",        "tags": ["web", "assets"] },
