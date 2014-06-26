@@ -55,6 +55,5 @@
    { "name": "ElMassimo/pakiderm",         "tags": ["memoization", "utils"] },
    { "name": "floere/phony",               "tags": ["utils"] },
    { "name": "restorando/rbrules",         "tags": ["utils"] },
-   { "name": "unsymbol/ribimaybe",         "tags": ["utils"] },
-   { "name": "alisnic/nyny",               "tags": ["web", "framework"] }
+   { "name": "unsymbol/ribimaybe",         "tags": ["utils"] }
  ]
