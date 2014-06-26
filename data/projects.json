@@ -54,5 +54,6 @@
    { "name": "rhysd/memo",                 "tags": ["memoization", "utils"] },
    { "name": "ElMassimo/pakiderm",         "tags": ["memoization", "utils"] },
    { "name": "floere/phony",               "tags": ["utils"] },
-   { "name": "restorando/rbrules",         "tags": ["utils"] }
+   { "name": "restorando/rbrules",         "tags": ["utils"] },
+   { "name": "unsymbol/ribimaybe",         "tags": ["utils"] }
  ]
