@@ -51,6 +51,8 @@
    { "name": "godfat/jellyfish",           "tags": ["web", "framework", "api"] },
    { "name": "godfat/muack",               "tags": ["testing", "mocks"] },
    { "name": "godfat/rubyqc",              "tags": ["testing", "quickcheck"] },
+   { "name": "godfat/pork",                "tags": ["testing"] },
+   { "name": "chneukirchen/bacon",         "tags": ["testing"] },
    { "name": "rhysd/memo",                 "tags": ["memoization", "utils"] },
    { "name": "ElMassimo/pakiderm",         "tags": ["memoization", "utils"] },
    { "name": "floere/phony",               "tags": ["utils"] },
