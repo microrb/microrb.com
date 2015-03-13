@@ -30,6 +30,8 @@
    { "name": "janlelis/value_struct",      "tags": ["attributes", "data"] },
    { "name": "janlelis/ruby_version",      "tags": ["utils"] },
    { "name": "janlelis/ruby_engine",       "tags": ["utils"] },
+   { "name": "janlelis/microevent",        "tags": ["events", "observer"] },
+   { "name": "janlelis/micrologger",       "tags": ["logging"] },
    { "name": "myobie/rep",                 "tags": ["serializer", "decorator"] },
    { "name": "myobie/mashed",              "tags": ["utils"] },
    { "name": "myobie/factories",           "tags": ["testing"] },
