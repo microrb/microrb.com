@@ -16,11 +16,13 @@ micro.rb website
 
 ## How to submit your project
 
-Submit an issue with:
+Submit a pull request with:
 
 * URL to your project
 * Description of what it does if you didn't do it already in the project's README
 * Indicate if it's beeing already used in production environments (even if it's below 1.0)
+
+**Note:** Issues should only be used for problems found within the micro.rb project itself.
 
 ## How to preview your project locally
 
