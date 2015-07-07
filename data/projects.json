@@ -55,5 +55,8 @@
    { "name": "ElMassimo/pakiderm",         "tags": ["memoization", "utils"] },
    { "name": "floere/phony",               "tags": ["utils"] },
    { "name": "restorando/rbrules",         "tags": ["utils"] },
-   { "name": "filib/ribimaybe",            "tags": ["utils"] }
+   { "name": "filib/ribimaybe",            "tags": ["utils"] },
+   { "name": "terlar/curio",               "tags": ["enumerable", "collection"] },
+   { "name": "terlar/formatter-date",      "tags": ["utils", "formatter"] },
+   { "name": "terlar/formatter-number",    "tags": ["utils", "formatter"] }
  ]
