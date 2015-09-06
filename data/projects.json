@@ -55,5 +55,6 @@
    { "name": "ElMassimo/pakiderm",         "tags": ["memoization", "utils"] },
    { "name": "floere/phony",               "tags": ["utils"] },
    { "name": "restorando/rbrules",         "tags": ["utils"] },
-   { "name": "filib/ribimaybe",            "tags": ["utils"] }
+   { "name": "filib/ribimaybe",            "tags": ["utils"] },
+   { "name": "fixrb/spectus",              "tags": ["testing"] }
  ]
