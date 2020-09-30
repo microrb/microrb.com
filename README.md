@@ -6,7 +6,7 @@ micro.rb website
 
 ## Project Submission Policy
 
-  * We don't accept ActiveSupport as a dependency because:
+  * We don't accept ActiveSupport as a Dependency because:
     * monkey-patching is bad m'kay
     * implicit dependencies inside activesupport via requires is also bad
     * it's a huge dependency that is often used without any good reasons (ie "oh I need Hash#symbolize_keys!")
@@ -30,10 +30,10 @@ You will need a Github API access token first, [register an application](https:/
 curl -u"username" -d '{"scopes":["public_repo"],"client_id":"...","client_secret":"...","note":"update microrb"}' https://api.github.com/authorizations
 ```
 
-filling in your username, `client_id` and `client_secret`. Note down the token in the response.
+Filling in your Username, `client_id` and `client_secret`. Note down the token in the response.
 
 
-1. Clone this repository
+1. Clone this Repository
 2. Run `bundle` to install the dependencies
 3. Add your project's Github path and tags to `data/projects.json`
 4. Update project data with `OAUTH_TOKEN=... ruby bin/update.rb` using the token acquired above
@@ -45,7 +45,7 @@ Generate HTML
 
 Make sure you have [mote][mote] and [virtus](https://github.com/solnic/virtus) installed, then:
 
-```terminal
+```Terminal
 $ make
 ```
 
