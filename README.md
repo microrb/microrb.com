@@ -1,4 +1,4 @@
-# microrb.com
+# miCops.com
 
 [![Join the chat at https://gitter.im/microrb/microrb.com](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/microrb/microrb.com?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
